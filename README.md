@@ -11,6 +11,7 @@ Contributing
 We welcome contributions from anyone interested in supporting our mission. Feel free to submit pull requests, report issues, or reach out to us with any suggestions or feedback.
 Thank you for your interest in EmpowerTech Education Initiative! We look forward to empowering more individuals through technology.
 This guide will walk you through the steps required to set up and run our project successfully.
+
 Step 1: Clone the Repository
 
 git clone <EmpowerTech_Education_Initiative>
