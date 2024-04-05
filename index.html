@@ -32,7 +32,17 @@
             <i class="bx bx-menu" onclick="myMenuFunction()"></i>
         </div>
     </nav>
-</nav>   
+</nav>
+<div class="container">
+    <h2>Select User Type:</h2>
+    <div class="options">
+        <input type="radio" id="student" name="userType" value="student">
+        <label for="student">Student</label>
+        <input type="radio" id="other" name="userType" value="other">
+        <label for="other">Other</label>
+    </div>
+    <button onclick="submitUser()">Submit</button>
+</div>
 <div class="form-box">
 <div class="login-container" id="login">
 <div class="top">
@@ -196,4 +206,4 @@
     </footer>
     <script src="script.js" defer></script>
 </body>
-</html>
+</html> 
