@@ -22,7 +22,7 @@ body{
 }
 .nav{
     position: fixed;
-    top: 20px;
+    top: 0;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -30,7 +30,7 @@ body{
     line-height: 100px;
     background: linear-gradient(rgba(39,39,39, 0.6), transparent);
     z-index: 100;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 .nav-logo p{
     color: white;
@@ -47,8 +47,8 @@ body{
     text-decoration: none;
     font-weight: 500;
     color: #fff;
-    padding-bottom: 20px;
-    margin: 0 15px;
+    padding-bottom: 15px;
+    margin: 0 25px;
 }
 .link:hover, .active{
     border-bottom: 2px solid #fff;
@@ -87,6 +87,7 @@ body{
     height: 420px;
     overflow: hidden;
     z-index: 2;
+
 }
 .login-container{
     position: absolute;
@@ -95,7 +96,6 @@ body{
     display: flex;
     flex-direction: column;
     transition: .5s ease-in-out;
-    padding-right: 20px;
 }
 .register-container{
     position: absolute;
@@ -108,7 +108,7 @@ body{
 .top span{
     color: #fff;
     font-size: small;
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
 }
@@ -130,7 +130,7 @@ header{
 .input-field{
     font-size: 15px;
     background: rgba(255, 255, 255, 0.2);
-    color: black;
+    color: #fff;
     height: 50px;
     width: 100%;
     padding: 0 10px 0 45px;
@@ -257,6 +257,8 @@ p {
     font-family: Arial, sans-serif;
     line-height: 1.2;
     text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
     
 
 }
@@ -303,6 +305,7 @@ img{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(30px);
     flex-wrap: wrap;
+    border: 10px;
   }
   .container form h1 {
     color: black;
@@ -317,11 +320,11 @@ img{
     height: 50px;
     padding-left: 10px;
     outline: none;
-    border: none;
+    border: box-shadow;
     font-size: 20px;
     margin-bottom: 10px;
     background: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid black;
     color: black;
   }
   .container form input::placeholder {
@@ -330,6 +333,7 @@ img{
   .container form #lastName,
   .container form #mobile {
     margin-left: 20px;
+    border: box-shadow;
   }
   .container form h4 {
     color: black;
@@ -339,7 +343,7 @@ img{
   }
   .container form textarea {
     background: none;
-    border: none;
+    border: box-shadow;
     border-bottom: 2px solid black;
     color: black;
     font-weight: 200;
@@ -374,5 +378,55 @@ img{
       color: black;
       transition: .5s ease-in-out;
   }
-  
+
+  .container {
+    padding-right: 60px;
+    
+}
+
+.options {
+    margin-bottom: 10px;
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options label {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .options label {
+        padding: 6px 12px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
+
  
+
